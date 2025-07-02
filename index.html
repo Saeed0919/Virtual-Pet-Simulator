@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Pet Simulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-200 to-purple-300 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded-2xl shadow-xl max-w-md w-full text-center">
+    <h1 class="text-3xl font-bold mb-4 text-purple-700">Virtual Pet</h1>
+
+<img id="pet-image" src="img/happy.jpg" alt="Pet" class="mx-auto w-32 h-32 transition-transform duration-300" />
+
+    <div class="my-4">
+      <p class="text-lg font-semibold text-gray-600">Hunger</p>
+      <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+        <div id="hunger-bar" class="bg-red-400 h-4 rounded-full w-2/3"></div>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-600">Happiness</p>
+      <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+        <div id="happiness-bar" class="bg-yellow-400 h-4 rounded-full w-1/2"></div>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-600">Energy</p>
+      <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+        <div id="energy-bar" class="bg-green-400 h-4 rounded-full w-3/4"></div>
+      </div>
+    </div>
+
+    <div class="flex justify-around mt-4">
+      <button onclick="feedPet()" class="bg-red-300 hover:bg-red-400 text-white px-4 py-2 rounded-xl">🍖 Feed</button>
+      <button onclick="playWithPet()" class="bg-yellow-300 hover:bg-yellow-400 text-white px-4 py-2 rounded-xl">🎾 Play</button>
+      <button onclick="sleepPet()" class="bg-blue-300 hover:bg-blue-400 text-white px-4 py-2 rounded-xl">💤 Sleep</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
